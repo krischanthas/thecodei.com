@@ -4,7 +4,14 @@ import Link from "next/link";
 const header = () => {
   return (
     <header className="py-2 outline flex justify-between items-center">
-      <h1 className="px-4">thecodei.com | things you should know</h1>
+      <Link href="/">
+        <a>
+          <h1 className="px-4">
+            <span className="font-bold text-lg">thecodei.com</span> | things you
+            should know
+          </h1>{" "}
+        </a>
+      </Link>
       <nav className="w-1/4">
         <ul className="flex justify-end px-4">
           <Link href="/recent">
